@@ -16,13 +16,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
 
       <body className='w-full h-screen font-bodyFont bg-bodyColor text-textLight  overflow-x-hidden overflow-y-scroll' >
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <LeftSide />
-          <div className="h-[88vh] w-full mx-auto p-4">
+          <div className="h-[88vh]  mx-auto p-4">
             {children}
           </div>
           <RisghtSide />
