@@ -18,7 +18,7 @@ const ContactMe = () => {
                 try my best to get back to you!
             </p>
 
-            <a href="mailto:vr7roshni@gmail.com">
+            <Link href="#contactform">
                 <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:border-black hover:text-black   duration-300">
                     Say Hello
                 </button>
