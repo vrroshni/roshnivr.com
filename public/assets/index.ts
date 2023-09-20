@@ -1,8 +1,8 @@
 import logo from './images/Roshni-Logo.png';
 import profile from './images/portfolio.jpg';
-import amazonImg from "./images/amazonImg.png";
-import cyberImg from "./images/cyberBlog.png";
+import heavenly from "./images/heavely.png";
+import aec from "./images/aec.jpg";
 import noorShop from "./images/noorShop.png";
 
 
-export { logo, profile,amazonImg, cyberImg, noorShop }
+export { logo, profile,heavenly, aec, noorShop }

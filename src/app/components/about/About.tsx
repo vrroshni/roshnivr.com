@@ -4,6 +4,7 @@ import { profile } from '../../../../public/assets'
 import SectionTitle from '../SectionTitle'
 import Gradient from '../elements/Gradient'
 import TechStacks from './TechStacks'
+import { mydetails } from '@/app/assets/data'
 
 const About = () => {
   return (
@@ -13,31 +14,15 @@ const About = () => {
       <SectionTitle title="About Me" titleNo="01" />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-black font-medium flex flex-col gap-4">
-          <p>
-            Hello! My name is Noor Mohammad and I enjoy creating things that
-            live on the internet. My interest in web development started back in
-            2012 when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
-          </p>
-          <p>
-            Fast-forward to today, and I had the privilege of working at an
-            advertising agency, a start-up,{" "}
-            <span className="text-textGreen">
-              a huge corporation, and a student-led design studio.
-            </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-            accusantium fugiat veritatis, quidem repellat{" "}
-            <span className="text-textGreen">
-              ab natus possimus? Sint, accusamus!
-            </span>
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            ullam eligendi dolorum nostrum possimus quos iusto magnam ut esse
-            recusandae.
-          </p>
-          
+          {mydetails.about.map(({title,description},key) => (
+            <p className='mt-3' key={key}>
+              <span className="text-textGreen text-base font-semibold">
+                {title}
+              </span>
+              {description}
+            </p>
+          ))}
+
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group hidden lgl:block">
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
@@ -55,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <TechStacks/>
+      <TechStacks />
     </section>
   )
 }

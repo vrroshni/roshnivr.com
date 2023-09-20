@@ -1,5 +1,5 @@
 "use client"
-import { skills } from '@/app/assets/data';
+import { skill, skills } from '@/app/assets/data';
 import React, { useState } from 'react'
 import TechCards from './TechCards';
 import SectionTitle from '../SectionTitle';
@@ -8,16 +8,8 @@ interface Props {
   skillData: skill[]
 }
 
-
-type skill = {
-  name: string,
-  image: string,
-  category: string
-}
-
-
-
 const TechStacks = () => {
+
   const categories = Array.from(new Set(skills.map((s: { category: any; }) => s.category)))
   const [category, setCategory] = useState(categories[0])
 

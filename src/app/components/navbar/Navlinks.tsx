@@ -47,9 +47,9 @@ const Navlinks = () => {
                     {
                         navlinks.map(({ name, link, delay }, key) => (
                             <Link key={key}
-                                className={`flex items-center gap-1 text-base font-medium text-black hover:text-textGreen cursor-pointer duration-300 nav-link ${activeSection===name && "active"}`}
+                                className={`flex items-center gap-1 text-base font-medium text-black hover:text-textGreen cursor-pointer duration-300 nav-link ${activeSection === name && "active"}`}
                                 href={link}
-                                onClick={()=>setActiveSection(name)}
+                                onClick={() => setActiveSection(name)}
                             >
                                 <motion.li
                                     initial={{ y: -10, opacity: 0 }}
@@ -62,16 +62,19 @@ const Navlinks = () => {
                         ))
                     }
                 </ul>
-                <a href="/assets/noor_resume.pdf" target="_blank">
-                    <motion.button
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5 }}
-                        className="px-4 py-2 rounded-md text-textGreen text-base border border-textGreen hover:text-black hover:border-black duration-300"
-                    >
-                        Resume
-                    </motion.button>
-                </a>
+
+
+
+                <motion.a
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="px-4 py-2 rounded-md text-textGreen text-base border border-textGreen hover:text-black hover:border-black duration-300"
+                    href='/assets/RoshniVR.pdf'
+                    download
+                >
+                    Resume
+                </motion.a>
             </div>
 
             <div onClick={() => setShow(true)}
@@ -103,9 +106,9 @@ const Navlinks = () => {
                                     navlinks.map(({ name, link, delay }, key) => (
                                         <Link key={key}
                                             className="flex items-center gap-1 text-base font-medium text-white hover:text-textGreen cursor-pointer duration-300 nav-link"
-                                            href={link}
-                                        >
+                                            href={link}  onClick={() => setShow(false)}>
                                             <motion.li
+                                               
                                                 initial={{ x: 20, opacity: 0 }}
                                                 animate={{ x: 0, opacity: 1 }}
                                                 transition={{ duration: 0.2, delay, ease: "easeIn" }} >
@@ -115,17 +118,16 @@ const Navlinks = () => {
                                     ))
                                 }
                             </ul>
-
-                            <a href="/assets/noor_resume.pdf" target="_blank">
-                                <motion.button
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 0.6, ease: "easeIn" }}
-                                    className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:text-white hover:border-white duration-300"
-                                >
-                                    Resume
-                                </motion.button>
-                            </a>
+                            <motion.a
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.6, ease: "easeIn" }}
+                                className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:text-white hover:border-white flex items-center justify-center duration-300"
+                                href='/assets/RoshniVR.pdf'
+                                download
+                            >
+                                Resume
+                            </motion.a>
 
                             <div className="flex gap-4">
                                 {socialmedialinks.map(({ href, delay, icon }, key) => (
