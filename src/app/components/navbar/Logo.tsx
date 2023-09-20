@@ -3,13 +3,13 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import { logo } from '../../../../public/assets';
+import {  logo } from '../../../../public/assets';
 
 const Logo = () => {
     return (
         <Link href="/">
             <motion.div>
-                <Image className='w-24 lg:w-28 ' src={logo} alt='Logo' />
+                <Image className='w-24 lg:w-28 ' src={logo} alt='Logo' priority={true} />
             </motion.div>
         </Link>
     )

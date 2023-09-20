@@ -14,7 +14,7 @@ const Experience = () => {
             className="max-w-containerSmall mx-auto py-10 mdl:py-24 px-4 relative scroll-mt-20"
         >
               <Gradient/>
-            <SectionTitle title="Where I have Worked" titleNo="02" />
+            <SectionTitle title="Where I have Worked" titleNo="03" />
             <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
                 <ul className="md:w-32 flex flex-col">
                     {workplaceData.map((workplace, index) => (

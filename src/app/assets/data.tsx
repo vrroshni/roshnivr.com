@@ -20,19 +20,24 @@ export const navlinks=[
         delay:0.2
     },
     {
+        name:"Skills",
+        link: "#skills",
+        delay:0.3
+    },
+    {
         name:"Experience",
         link: "#experience",
-        delay:0.3
+        delay:0.4
     },
     {
         name:"Projects",
         link: "#project",
-        delay:0.4
+        delay:0.5
     },
     {
         name:"Contact",
         link: "#contact",
-        delay:0.5
+        delay:0.6
     }
 ]
 
@@ -40,27 +45,27 @@ export const navlinks=[
 export const socialmedialinks=[
     {
         href:"https://github.com/vrroshni",
-        delay:0.8,
+        delay:0.1,
         icon:<TbBrandGithub />
     },
     {
         href:"https://github.com/vrroshni",
-        delay: 0.85,
+        delay: 0.2,
         icon:<SlSocialYoutube />
     },
     {
         href:"https://github.com/vrroshni",
-        delay: 0.9,
+        delay: 0.3,
         icon:<SlSocialYoutube />
     },
     {
         href:"https://github.com/vrroshni",
-        delay: 0.95,
+        delay: 0.4,
         icon: <SlSocialFacebook />
     },
     {
         href:"https://github.com/vrroshni",
-        delay: 1,
+        delay: 5,
         icon:<SlSocialYoutube />
     },
 
@@ -174,3 +179,87 @@ export const workplaceData = [
     },
     // Add more archive data items here
   ];
+
+
+ export const  skills=[
+    {
+      name: "JavaScript",
+      image: "https://img.icons8.com/color/144/null/javascript--v1.png",
+      category: "Frontend"
+    },
+    {
+      name: "ReactJS",
+      image: "https://img.icons8.com/?size=512&id=bzf0DqjXFHIW&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "NextJS",
+      image: "https://img.icons8.com/?size=512&id=yUdJlcKanVbh&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "HTML5",
+      image: "https://img.icons8.com/?size=512&id=20909&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "CSS3",
+      image: "https://img.icons8.com/?size=512&id=21278&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "Bootstrap",
+      image: "https://img.icons8.com/?size=512&id=84710&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "Tailwind CSS",
+      image: "https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png",
+      category: "Frontend"
+    },
+    {
+      name: "Python",
+      image: "https://img.icons8.com/?size=512&id=13441&format=png",
+      category: "Backend"
+    },
+    {
+      name: "Django",
+      image: "https://img.icons8.com/?size=512&id=qULYrKvr-AFH&format=png",
+      category: "Backend"
+    },
+    {
+      name: "Firebase",
+      image: "https://img.icons8.com/color/144/null/firebase.png",
+      category: "Backend"
+    },
+    {
+      name: "Postgres",
+      image: "https://img.icons8.com/?size=512&id=38561&format=png",
+      category: "Backend"
+    },
+    {
+      name: "Googling",
+      image: "https://img.icons8.com/?size=512&id=17949&format=png",
+      category: "Others"
+    },
+    {
+      name: "Git",
+      image: "https://img.icons8.com/?size=512&id=20906&format=png",
+      category: "Others"
+    },
+    {
+      name: "Vercel",
+      image: "https://img.icons8.com/?size=512&id=RSG5kOaTrRmU&format=png",
+      category: "Others"
+    },
+    {
+      name: "AWS",
+      image: "https://img.icons8.com/?size=512&id=33039&format=png",
+      category: "Others"
+    },
+    {
+      name: "GitHub",
+      image: "https://img.icons8.com/material-outlined/96/null/github.png",
+      category: "Others"
+    }
+  ]

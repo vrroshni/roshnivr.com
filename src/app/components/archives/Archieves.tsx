@@ -22,7 +22,7 @@ const Archieves = () => {
             <div className="mt-12 flex items-center justify-center">
                 <button
                     onClick={() => setShowMore(!showMore)}
-                    className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+                    className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen  hover:border-black hover:text-black duration-300"
                 >
                     {showMore ? "Show Less" : "Show More"}
                 </button>

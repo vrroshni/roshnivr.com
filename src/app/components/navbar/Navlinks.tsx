@@ -6,29 +6,31 @@ import { navlinks, socialmedialinks } from '@/app/assets/data';
 import { MdOutlineClose } from "react-icons/md";
 
 const Navlinks = () => {
+    const [activeSection, setActiveSection] = useState("Home");
 
     const ref = useRef<string | any>("");
     const [show, setShow] = useState(false);
 
-    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        e.preventDefault();
-        setShow(false);
-        const { href } = e.currentTarget;
-        const targetId = href.replace(/.*\#/, "");
-        const elem = document.getElementById(targetId);
+    // const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,name:string) => {
+    //     e.preventDefault();
+    //     setShow(false);
+    //     setActiveSection(name)
+    //     const { href } = e.currentTarget;
+    //     const targetId = href.replace(/.*\#/, "");
+    //     const elem = document.getElementById(targetId);
 
-        elem?.scrollIntoView({
-            behavior: "smooth",
-        });
+    //     elem?.scrollIntoView({
+    //         behavior: "smooth",
+    //     });
 
-        // Update the class name of the clicked link
-        const links = document.querySelectorAll(".nav-link");
-        links.forEach((link) => {
-            link.classList.remove("active");
-        });
+    //     // Update the class name of the clicked link
+    //     const links = document.querySelectorAll(".nav-link");
+    //     links.forEach((link) => {
+    //         link.classList.remove("active");
+    //     });
 
-        e.currentTarget.classList.add("active");
-    };
+    //     e.currentTarget.classList.add("active");
+    // };
 
     function handleClick(e: any) {
         if (e.target.contains(ref.current)) {
@@ -45,9 +47,9 @@ const Navlinks = () => {
                     {
                         navlinks.map(({ name, link, delay }, key) => (
                             <Link key={key}
-                                className="flex items-center gap-1 text-base font-medium text-black hover:text-textGreen cursor-pointer duration-300 nav-link"
+                                className={`flex items-center gap-1 text-base font-medium text-black hover:text-textGreen cursor-pointer duration-300 nav-link ${activeSection===name && "active"}`}
                                 href={link}
-                                onClick={handleScroll}
+                                onClick={()=>setActiveSection(name)}
                             >
                                 <motion.li
                                     initial={{ y: -10, opacity: 0 }}

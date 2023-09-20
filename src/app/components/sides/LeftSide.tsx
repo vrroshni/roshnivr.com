@@ -15,7 +15,7 @@ const LeftSide = () => {
                 <div className="flex flex-col gap-4">
                     {socialmedialinks.map(({ href, icon },key) => (
                         <a href={href} target="_blank" key={key}>
-                            <span className="w-10 h-10 text-xl  bg-gray-200 border-textGreen border rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                            <span className="w-10 h-10 text-xl  hover:bg-gray-200  border-black border rounded-full inline-flex items-center justify-center hover:text-textGreen hover:border-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                 {icon}
                             </span>
                         </a>

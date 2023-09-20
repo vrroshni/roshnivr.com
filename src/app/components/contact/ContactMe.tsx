@@ -1,5 +1,8 @@
 import React from 'react'
 import Gradient from '../elements/Gradient'
+import ContactForm from './ContactForm'
+import Link from 'next/link'
+import { FcGoogle } from 'react-icons/fc'
 
 const ContactMe = () => {
     return (
@@ -7,9 +10,9 @@ const ContactMe = () => {
             id="contact"
             className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center relative scroll-mt-20"
         >
-                  <Gradient/>
+            <Gradient />
             <p className="font-titleFont text-lg text-gray-700 font-semibold flex items-center tracking-wide">
-                04. What’s Next?
+                05. What’s Next?
             </p>
             <h2 className="font-titleFont text-5xl font-semibold text-textGreen">Get In Touch</h2>
             <p className="max-w-[600px] text-center text-black">
@@ -18,11 +21,22 @@ const ContactMe = () => {
                 try my best to get back to you!
             </p>
 
-            <Link href="#contactform">
-                <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:border-black hover:text-black   duration-300">
-                    Say Hello
+            <a  href="mailto:vr7roshni@gmail.com" target='_blank'>
+                <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:border-black hover:text-black items-center justify-center gap-1   duration-300 flex ">
+                    Say Hello <FcGoogle size={24}/>
                 </button>
             </a>
+{/* 
+            <h2 className="font-titleFont text-2xl font-bold text-black">OR</h2>
+
+            <Link href="#contactform">
+                <button className="w-40 h-14 border border-textGreen mb-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:border-black hover:text-black   duration-300">
+                    Lets Connect Now
+                </button>
+            </Link>
+
+
+            <ContactForm /> */}
         </section>
     )
 }
