@@ -70,7 +70,7 @@ const Navlinks = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
                     className="px-4 py-2 rounded-md text-textGreen text-base border border-textGreen hover:text-black hover:border-black duration-300"
-                    href='/assets/RoshniVR.pdf'
+                    href='/RoshniVR.pdf'
                     download
                 >
                     Resume
@@ -123,7 +123,7 @@ const Navlinks = () => {
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.6, ease: "easeIn" }}
                                 className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:text-white hover:border-white flex items-center justify-center duration-300"
-                                href='/assets/RoshniVR.pdf'
+                                href='/RoshniVR.pdf'
                                 download
                             >
                                 Resume
