@@ -9,7 +9,7 @@ import AppParticles from './AppParticles';
 const titles = [
   "Frontend",
   "Backend",
-  "Full Stack"
+  "FullStack"
 ]
 
 
