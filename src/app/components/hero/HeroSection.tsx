@@ -20,7 +20,7 @@ const HeroSection = () => {
       className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4 relative mt-28 px-4 md:px-0"
     >
       <Gradient />
-      <AppParticles/>
+      <AppParticles />
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -36,8 +36,10 @@ const HeroSection = () => {
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
         Roshni V R
-        <span className="text-textGreen mt-2 lgl:mt-4 flex flex-row items-start gap-3">
-          I am a
+        <span className="text-textGreen mt-2 lgl:mt-4 flex flex-row items-start flex-wrap gap-3">
+          <span className='min-w-fit'>
+            I am a
+          </span>
           <Typewriter
             options={{
               strings: titles,
@@ -49,9 +51,8 @@ const HeroSection = () => {
               cursorClassName: "text-textGreen"
             }}
           />
-          <span className='text-black'>
-          Developer
-
+          <span className='text-textGreen'>
+            Developer
           </span>
         </span>
       </motion.h1>

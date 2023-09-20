@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-       <Head>
+      <Head>
         <title>
           iPhone 12 XS Max For Sale in Colorado - Big Discounts | Apple
         </title>

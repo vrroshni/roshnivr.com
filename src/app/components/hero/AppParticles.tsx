@@ -21,7 +21,7 @@ const AppParticles = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         >
         <Particles
-            className='w-full h-full translate-z-0 absolute inset-0 z-0'
+            className=' h-full translate-z-0 absolute inset-0 z-0'
             id='tsparticles'
             init={particlesInit}
             loaded={particlesLoaded}
