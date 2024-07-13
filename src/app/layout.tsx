@@ -20,13 +20,15 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <Head>
         <title>
-          iPhone 12 XS Max For Sale in Colorado - Big Discounts | Apple
+          Roshni V R
         </title>
         <meta
           name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+          content="Python full stack Developer"
           key="desc"
         />
+
+        <link rel="icon" href="/favicon.ico" sizes="128*128" />
       </Head>
 
       <body className='w-full h-screen font-bodyFont bg-bodyColor text-textLight  overflow-x-hidden overflow-y-scroll' >
