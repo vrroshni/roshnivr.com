@@ -24,7 +24,7 @@ const Experience = () => {
                             className={`${selectedWorkplace === index
                                 ? "border-l-black font-semibold  text-black bg-textGreen/20 "
                                 : "border-l-hoverColor  text-black"
-                                } border-l-2  py-3 text-sm cursor-pointer duration-300 px-8 font-medium hover:bg-textGreen/25 hover:text-black`}
+                                } text-nowrap  border-l-2  py-3 text-sm cursor-pointer duration-300 px-8 font-medium hover:bg-textGreen/25 hover:text-black`}
                         >
                             {workplace.company}
                         </li>

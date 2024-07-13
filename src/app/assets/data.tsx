@@ -78,8 +78,18 @@ export const socialmedialinks = [
 export const workplaceData = [
   {
     title: "Full Stack Developer",
+    company: "Touchcore Systems",
+    date: "October 2023 - Present",
+    responsibilities: [
+      "Working on releasing the 3.0 version of the nof1 product by transitioning the frontend from Vue.js to Blazor and updating the API to the latest .NET Core with clean architecture and SOLID principles.",
+      "Enhanced future scalability and maintainability by upgrading Project MirrorAR from the oldest Vue.js version to the latest.",
+      "Building a strong foundation in .NET Core to support modern development practices.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
     company: "Aspen Leads",
-    date: "March 2023 - August 2023",
+    date: "March 2023 - September 2023",
     responsibilities: [
       "Effectively managed client relationships, ensuring their requirements were met and providing ongoing support.",
       "Leveraged Python, Django Rest Framework, React, Next.js, and PostgreSQL to develop dynamic web applications, achieving a 30% increase in organic traffic through SEO optimization and server-side rendering.",
@@ -174,10 +184,21 @@ export const archiveData = [
 ];
 
 
+
 export const skills = [
   {
     name: "JavaScript",
     image: "https://img.icons8.com/color/144/null/javascript--v1.png",
+    category: "Frontend"
+  },
+  {
+    name: "C#",
+    image: "/assets/images/csharp.png",
+    category: "Frontend"
+  },
+  {
+    name: "Blazor",
+    image: "/assets/images/blazor.png",
     category: "Frontend"
   },
   {
@@ -218,6 +239,16 @@ export const skills = [
   {
     name: "Django",
     image: "https://img.icons8.com/?size=512&id=qULYrKvr-AFH&format=png",
+    category: "Backend"
+  },
+  {
+    name: "C#",
+    image: "/assets/images/csharp.png",
+    category: "Backend"
+  },
+  {
+    name: ".NetCore",
+    image: "/assets/images/netcore.png",
     category: "Backend"
   },
   {
@@ -265,11 +296,11 @@ export const mydetails = {
     "Backend Developer",
     "FullStack Developer"
   ],
-  descriptionHero: "A skilled Full Stack Developer with a passion for crafting exceptional web experiences. With expertise in Python, Django, React, and Next.js, I specialize in creating dynamic and user-friendly applications. Now, I'm on the lookout for new opportunities to bring innovation to your projects. Contact me today to start a conversation!",
+  descriptionHero: "A skilled Full Stack Developer with a passion for crafting exceptional web experiences. With expertise in Python, Django, .NetCore, Javascript, Vue, React, and Next.js, I specialize in creating dynamic and user-friendly applications. Now, I'm on the lookout for new opportunities to bring innovation to your projects. Contact me today to start a conversation!",
   about: [
     {
       title: "🚀 Skills That Drive Success:",
-      description: "With over 2 years of experience as a Full Stack Developer, I bring expertise in Python, Django, React, and Next.js. My passion lies in creating dynamic web applications and crafting seamless user experiences."
+      description: "With over 2 years of experience as a Full Stack Developer, I bring expertise in Python, Django, .NetCore, Javascript, Vue, React, and Next.js. My passion lies in creating dynamic web applications and crafting seamless user experiences."
     },
     {
       title: "🌟 A Journey of Growth:",
