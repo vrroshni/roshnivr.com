@@ -3,13 +3,14 @@ import type { Metadata } from 'next'
 import Navbar from './components/navbar/Navbar'
 import LeftSide from './components/sides/LeftSide'
 import RisghtSide from './components/sides/RisghtSide'
-import Head from 'next/head'
 
 
-// export const metadata: Metadata = {
-//   title: 'Roshni V R',
-//   description: 'Python full stack Developer',
-// }
+
+
+export const metadata: Metadata = {
+  title: 'Roshni V R',
+  description: 'Python full stack Developer',
+}
 
 export default function RootLayout({
   children,
@@ -18,19 +19,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
-      <Head>
-        <title>
-          Roshni V R
-        </title>
-        <meta
-          name="description"
-          content="Python full stack Developer"
-          key="desc"
-        />
-
-        <link rel="icon" href="/favicon.ico" sizes="128*128" />
-      </Head>
-
       <body className='w-full h-screen font-bodyFont bg-bodyColor text-textLight  overflow-x-hidden overflow-y-scroll' >
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
